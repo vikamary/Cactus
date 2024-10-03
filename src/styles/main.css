@@ -315,4 +315,83 @@ img {
 .new__title {
   font-size: var(--h2-font-size);
   text-align: center;
+}
+
+.shop__container {
+  padding-top: 104px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 96px 24px;
+}
+
+.shop__card {
+  position: relative;
+  background: var(--gradient-card);
+  padding: 92px 12px 20px 12px;
+  border: 2px solid var(--first-color-light);
+  border-radius: 16px;
+}
+.shop__card:hover .shop__img {
+  transform: translateY(-8px);
+}
+
+.shop__img {
+  position: absolute;
+  top: -72px;
+  left: 0;
+  right: 0;
+  width: 130px;
+  margin: 0 auto;
+  transition: transform 0.4s;
+}
+
+.shop__title {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 8px;
+}
+
+.shop__price {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+.shop__button {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  outline: none;
+  border: none;
+  background-color: var(--white-color);
+  padding: 6px;
+  border-radius: 50%;
+  font-size: 20px;
+  display: grid;
+  cursor: pointer;
+}
+
+.care__container {
+  padding-top: 32px;
+  row-gap: 32px;
+}
+
+.care__img {
+  width: 270px;
+  filter: drop-shadow(var(--shadow-img));
+  justify-self: center;
+}
+
+.care__list {
+  display: grid;
+  row-gap: 16px;
+}
+
+.care__item {
+  display: flex;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  align-items: flex-start;
+}
+.care__item i {
+  font-size: 24px;
+  color: var(--first-color);
 }/*# sourceMappingURL=main.css.map */

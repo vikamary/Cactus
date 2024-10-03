@@ -534,4 +534,8 @@ img {
 
 .show-scroll {
   bottom: 48px;
+}
+
+.active__link {
+  color: var(--first-color);
 }/*# sourceMappingURL=main.css.map */

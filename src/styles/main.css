@@ -149,4 +149,19 @@ img {
   -moz-column-gap: 8px;
        column-gap: 8px;
   align-items: center;
+}
+
+@media screen and (max-width: 1150px) {
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: hsla(228, 24%, 6%, 0.2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    width: 80%;
+    height: 100%;
+    padding: 96px 48px 0;
+    transition: right 0.4s;
+  }
 }/*# sourceMappingURL=main.css.map */

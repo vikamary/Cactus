@@ -103,4 +103,50 @@ img {
 
 .main {
   overflow: hidden;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-color: transparent;
+  z-index: var(--z-fixed);
+}
+
+.nav {
+  position: relative;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo,
+.nav__close,
+.nav__toggle,
+.nav__actions {
+  display: flex;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+.nav__logo {
+  font-weight: var(--font-semi-bold);
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  align-items: center;
+}
+
+.nav__logo i {
+  color: var(--first-color);
+  font-size: 20px;
+  font-weight: initial;
+}
+
+.nav__actions {
+  font-size: 20px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */

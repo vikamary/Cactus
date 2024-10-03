@@ -46,8 +46,8 @@
   .nav__menu{
     position: fixed;
     top: 0;
-    right: 0;
-    background-color: hsl(228, 24%, 6%, .2);
+    right: -100%;
+    background-color: #0c0d1333;
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     width: 80%;
@@ -55,4 +55,31 @@
     padding: 96px 48px 0;
     transition: right .4s;
   }
+}
+
+.nav__list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+}
+
+.nav__link{
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  transition: color .4s;
+
+  &:hover{
+    color: var(--first-color);
+  }
+}
+
+.nav__close{
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  font-size: 20px;
+}
+
+.show-menu{
+  right: 0;
 }

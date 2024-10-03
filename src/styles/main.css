@@ -55,7 +55,7 @@ body {
   color: var(--text-color);
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: inherit;
   color: var(--title-color);
@@ -66,11 +66,7 @@ ul, ul li {
   list-style: none;
 }
 
-a, a:link, a:visited {
-  text-decoration: none;
-}
-
-a:hover {
+a, a:visited {
   text-decoration: none;
 }
 
@@ -82,7 +78,7 @@ img {
 
 .container {
   max-width: 1120px;
-  margin: 0 auto;
+  margin-inline: 24px;
 }
 
 .grid {
@@ -189,4 +185,120 @@ img {
 
 .show-menu {
   right: 0;
+}
+
+.home__container {
+  padding-top: 40px;
+  row-gap: 32px;
+}
+
+.home__img {
+  width: 270px;
+  filter: drop-shadow(var(--shadow-img));
+  justify-self: center;
+}
+
+.home__data {
+  text-align: center;
+}
+
+.home__title {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: 16px;
+}
+.home__title span {
+  color: var(--first-color);
+}
+
+.home__description {
+  margin-bottom: 48px;
+}
+
+.home__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+
+.button {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  font-weight: var(--font-bold);
+  padding: 8px 24px 8px 8px;
+  border-radius: 64px;
+  display: inline-flex;
+  align-items: center;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+.button span {
+  background-color: var(--first-color);
+  padding: 8px;
+  font-size: 20px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: transform 0.4s;
+}
+.button:hover span {
+  transform: translateX(2.4px) rotate(-30deg);
+}
+
+.button__link {
+  color: var(--white-color);
+  font-weight: var(--font-bold);
+  text-decoration: underline;
+  transition: color 0.4s;
+}
+.button__link:hover {
+  color: var(--first-color);
+}
+
+.new__data {
+  text-align: center;
+}
+
+.new__container {
+  row-gap: 120px;
+}
+
+.new__content {
+  row-gap: 96px;
+}
+
+.new__card {
+  position: relative;
+  width: 200px;
+  background: var(--gradient-card);
+  padding: 144px 12px 24px 12px;
+  border: 2px solid var(--first-color-light);
+  border-radius: 24px;
+}
+.new__card:nth-child(odd) {
+  rotate: -5deg;
+}
+.new__card:nth-child(even) {
+  justify-self: flex-end;
+  rotate: 5deg;
+}
+.new__card:hover .new__img {
+  transform: translateY(-8px);
+}
+
+.new__img {
+  position: absolute;
+  top: -72px;
+  left: 0;
+  right: 0;
+  width: 180px;
+  margin: 0 auto;
+  transition: transform 0.4s;
+}
+
+.new__title {
+  font-size: var(--h2-font-size);
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

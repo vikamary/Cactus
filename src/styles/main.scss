@@ -68,7 +68,7 @@ body {
   color: var(--text-color);
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: inherit;
   color: var(--title-color);
@@ -79,11 +79,7 @@ ul, ul li {
   list-style: none;
 }
 
-a, a:link, a:visited  {
-  text-decoration: none;
-}
-
-a:hover  {
+a, a:visited  {
   text-decoration: none;
 }
 
@@ -95,7 +91,7 @@ img {
 
 .container{
   max-width: 1120px;
-  margin: 0 auto;
+  margin-inline: 24px;
 }
 
 .grid {
@@ -119,3 +115,5 @@ img {
 }
 
 @import "./blocks/header";
+@import "./blocks/home";
+@import "./blocks/new";

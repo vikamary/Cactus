@@ -1,51 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
-  --font-page: "Montserrat", sans-serif;
-  --background: #141118;
-  --text-color: #F2F2F2;
-  --logo-color: #EA5BDB;
-  --header-height: 3.5rem;
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(93, 54%, 54%);
-  --first-color-alt: hsl(93, 50%, 48%);
-  --first-color-light: hsl(93, 58%, 66%);
-  --title-color: hsl(228, 8%, 98%);
-  --text-color: hsl(228, 8%, 70%);
-  --white-color: hsl(228, 8%, 98%);
-  --black-color: hsl(228, 6%, 4%);
-  --body-color: hsl(228, 6%, 8%);
-  --container-color: hsl(228, 6%, 12%);
-  --shadow-img: 0 0 48px hsla(93, 54%, 54%, .4);
+  --header-height: 56px;
+  --first-color: #83c94a;
+  --first-color-alt: #74b83d;
+  --first-color-light: #a3db76;
+  --title-color: #f9fafa;
+  --text-color: #acafb9;
+  --white-color: #f9fafa;
+  --black-color: #0a0a0b;
+  --body-color: #131416;
+  --container-color: #1d1d20;
+  --shadow-img: 0 0 48px #83c94a66;
   --gradient-card: linear-gradient(180deg,
-                                hsla(93, 8%, 8%),
-                                hsla(93, 40%, 30%));
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
+                                #141613,
+                                #496b2e);
   --body-font: "Montserrat", sans-serif;
-  --biggest-font-size: 2.25rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  /*========== Font weight ==========*/
+  --biggest-font-size: 36px;
+  --h1-font-size: 24px;
+  --h2-font-size: 20px;
+  --h3-font-size: 16px;
+  --normal-font-size: 15px
+  --small-font-size: 13px;
   --font-regular: 400;
   --font-semi-bold: 600;
   --font-bold: 700;
-  /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
 }
 
 @media screen and (min-width: 1150px) {
   :root {
-    --biggest-font-size: 4.25rem;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: .875rem;
+    --biggest-font-size: 68px;
+    --h1-font-size: 36px;
+    --h2-font-size: 24px;
+    --h3-font-size: 20px;
+    --normal-font-size: 16px;
+    --small-font-size: 14px;
   }
 }
 * {
@@ -101,14 +91,14 @@ img {
 }
 
 .section {
-  padding-block: 5rem 1rem;
+  padding-block: 80px 16px;
 }
 
 .section__title {
   font-size: var(--h1-font-size);
   font-weight: var(--font-bold);
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 .main {
